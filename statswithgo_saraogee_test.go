@@ -6,7 +6,7 @@ import (
 	"github.com/montanaflynn/stats"
 )
 
-// Benchmarks
+// Benchmarks by adding all the data and performing the regressions without rounding - same as in Python/R
 func BenchmarkRegressAll(b *testing.B) {
 	data1 := []stats.Coordinate{
 		{X: 10, Y: 8.04},
@@ -67,6 +67,8 @@ func BenchmarkRegressAll(b *testing.B) {
 
 }
 
+// Unit test for Regress function ensuring that the gradient and intercepts are 0.5 and 3 for each dataset.
+// Error messages identify which value is incorrect (gradient/intercept) for each of the four datasets.
 func TestRegress(t *testing.T) {
 	gradient_all := 0.5
 	intercept_all := 3.0

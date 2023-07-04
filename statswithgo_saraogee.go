@@ -14,7 +14,8 @@ func roundFloat(val float64, precision uint) float64 {
 	return math.Round(val*ratio) / ratio
 }
 
-// stats package does not output gradient and intercept and must be recalculated with this function
+// stats package does not output gradient and intercept and must be recalculated with this function.
+// This function takes in the predicted Y values for each X and outputs the gradient and intercept by backcalculation without rounding.
 func Regress(data []stats.Coordinate) (gradient, intercept float64) {
 	r, _ := stats.LinearRegression(data)
 	// Gradient and intercepts use 7th and 8th points because others result in zero values with the fourth dataset
