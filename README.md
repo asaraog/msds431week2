@@ -15,6 +15,9 @@ Benchmarking of runtime for go routine and unit test for Regress function. This 
 *runtimesPythonR.ipynb:* \
 Benchmarking of runtime in a Jupyter notebook. Kernel was changed between R and Python3.11.2 for each cell loading the Anscombe data and performing the regression.
 
+*Week2* \
+Unix executable file of compiled Go code.
+
 ### References
 
 Anscombe, F. J. 1973. “Graphs in Statistical Analysis.” The American Statistician 27 (1): 17–21. https://doi.org/10.2307/2682899. \
