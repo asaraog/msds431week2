@@ -6,6 +6,7 @@ import (
 	"github.com/montanaflynn/stats"
 )
 
+// Benchmarks
 func BenchmarkRegressAll(b *testing.B) {
 	data1 := []stats.Coordinate{
 		{X: 10, Y: 8.04},
