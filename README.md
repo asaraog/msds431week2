@@ -6,18 +6,18 @@ Go will be help power our backend web and database servers and distributed servi
 
 ### Files
 
-*statswithgo_saraogee.go:* 
+*statswithgo_saraogee.go:* \
 Main routine loads Anscombe Quartet data into Series types using [LinearRegression](https://github.com/montanaflynn/stats/blob/master/regression.go) in the stats package to output predicted values. An in-built Regress function recalculates the gradient and intercept which is rounded to 2 significant figures with a [roundFloat function](gosamples.dev/round-float/).
 
-*statswithgo_saraogee_test.go:* 
+*statswithgo_saraogee_test.go:* \
 Benchmarking of runtime for go routine and unit test for Regress function. This testing routine ensures equivalence with Pyhon/R output coefficients of 0.5 and 3.
 
-*runtimesPythonR.ipynb:*
+*runtimesPythonR.ipynb:* \
 Benchmarking of runtime in a Jupyter notebook. Kernel was changed between R and Python3.11.2 for each cell loading the Anscombe data and performing the regression.
 
 ### References
 
-Anscombe, F. J. 1973. “Graphs in Statistical Analysis.” The American Statistician 27 (1): 17–21. https://doi.org/10.2307/2682899.\
-Flynn, Montana. 2023. “Stats - Golang Statistics Package.” 2023. https://github.com/montanaflynn/stats.\
+Anscombe, F. J. 1973. “Graphs in Statistical Analysis.” The American Statistician 27 (1): 17–21. https://doi.org/10.2307/2682899. \
+Flynn, Montana. 2023. “Stats - Golang Statistics Package.” 2023. https://github.com/montanaflynn/stats. \
 Miller, Thomas. 2015. “Modeling Techniques in Predictive Analytics Chapter 1.” 2015. https://github.com/mtpa/mtpa/tree/master/MTPA_Chapter_1.
 
